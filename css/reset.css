@@ -1,0 +1,119 @@
+html {
+    overflow-y: scroll
+}
+
+:root {
+    --bgcolor: white;
+    --fontcolor: #444;
+    --linkcolor: #00d;
+    --visitedcolor: #551a8b;
+    --precolor: #fff;
+    --prebgcolor: #000;
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bgcolor: black;
+        --fontcolor: white;
+        --linkcolor: #5bf;
+        --visitedcolor: #ae5ee0;
+        --precolor: #fff;
+        --prebgcolor: #383838;
+    }
+}
+*/
+
+body {
+    color: var(--fontcolor);
+    background: var(--bgcolor);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:link {
+    /*
+    color: var(--linkcolor);
+    */
+    color: #00d;
+}
+
+a:visited {
+    /*
+    color: var(--visitedcolor);
+    */
+    color: #00d;
+}
+
+a:active {
+    /*
+    color: var(--visitedcolor);
+    */
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+h2, h3, p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+p > code {
+    /*
+    color: var(--precolor);
+    background: var(--prebgcolor);
+    */
+    color: #444;
+    background: #F3F3F0;
+    padding: 2px;
+}
+
+pre {
+    /*
+    color: var(--precolor);
+    background: var(--prebgcolor);
+    padding: 24px;
+    overflow-x: auto;
+    */
+    color: #444;
+    background: #F3F3F0;
+    padding: 8px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+article {
+    padding: 10px 0;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    color: #888;
+    font: 12px/1.5 monospace;
+    text-align: center;
+}
+
+figure {
+    margin: auto;
+}
